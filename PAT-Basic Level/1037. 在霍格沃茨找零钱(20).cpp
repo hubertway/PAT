@@ -5,6 +5,7 @@ struct Money {
 	int gal, sic, knut;
 	int sum;
 };
+
 Money P, A;
 int main() {
 	scanf("%d.%d.%d %d.%d.%d", 
