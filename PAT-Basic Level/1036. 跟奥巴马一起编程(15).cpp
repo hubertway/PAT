@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int main(){
 	int n;
 	char c;
@@ -17,6 +16,5 @@ int main(){
 		}
 		printf("\n");
 	}
-	
 	return 0;
 } 
