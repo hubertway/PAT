@@ -19,8 +19,9 @@ int main() {
 			v.push_back(d);
 			if (d < e) cnt++;
 		}
-		if (cnt > D)	emp++;
-		else if (cnt > K / 2)	may++;
+		if (cnt > K / 2) {
+			K > D ? emp++ : may++;
+		}
 	}
 	double ma = 100.0 * may / N; //可能空置率
 	double ep = 100.0 * emp / N; //空置率
