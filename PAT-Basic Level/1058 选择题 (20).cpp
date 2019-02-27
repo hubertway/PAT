@@ -10,7 +10,6 @@ struct Qus {
 
 int main() {
 	int N, M;
-
 	scanf("%d %d", &N, &M);
 	vector<Qus>op(M + 1);
 	vector<int>sum(N + 1); // 总分
@@ -47,7 +46,6 @@ int main() {
 			else cnt[k]++; //答错，次数加一
 		}
 	}
-
 	for (int i = 1; i <= N; i++)  printf("%d\n", sum[i]);	//输出分数
 	for (int i = 1; i <= N; i++) { //找到最大错误次数
 		if (maxW < cnt[i])
