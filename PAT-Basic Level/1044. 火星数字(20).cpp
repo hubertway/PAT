@@ -17,12 +17,9 @@ void func(string s) {
 		int y, x; //火星数字的低位和高位
 		x = num / 13;
 		y = num % 13;
-		if (x) {
-			cout << g[x] << " " << d[y] << endl;
-		}
-		else {
-			cout << d[y] << endl;
-		}
+		if (x && y) cout << g[x] << " " << d[y] << endl;
+		if(x && !y) cout << g[x]  << endl;
+		if(!x) cout << d[y] << endl;
 	}
 	else { //输入的是火星文
 		if ((len > 3) && s.substr(0, 4) !="tret") { // 也就是输入的是两位有效火星数字
