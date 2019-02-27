@@ -40,7 +40,8 @@ int main() {
 	for (int i = 0; i < K; i++) {
 		int a, b, c, d, e;
 		cin >> a >> b >> c >> d >> e;
-		if (a > hand.size() || b > eye.size() || c > mouth.size() || d > eye.size() || e > hand.size()) {
+		if (a > hand.size() || b > eye.size() || c > mouth.size() || d > eye.size() || e > hand.size()
+			|| a < 1 || b < 1 || c < 1 || d < 1 || e < 1){
 			cout << "Are you kidding me? @\\/@" << endl;
 			continue;
 		}
